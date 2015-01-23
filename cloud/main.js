@@ -9,7 +9,7 @@ Parse.Cloud.define("hello", function(request, response) {
 var Mandrill = require('mandrill');
 Mandrill.initialize('myAPIKey');
 
-Parse.job("sendEmail",function(a,b){
+Parse.Cloud.job("sendEmail",function(a,b){
     console.log(Json.stringify(a));
     console.log(Json.stringify(b));
     Mandrill.sendEmail({
