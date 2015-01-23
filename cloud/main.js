@@ -39,7 +39,7 @@ Parse.Cloud.job("sendEmail",function(a,b){
 });
 
 
-var cburl = require('callback.js');
+var cburl = require('/cloud/callback.js');
 var mailboy = require('cloud/mailboy.js');
 
 Parse.job("cburl",cburl);
