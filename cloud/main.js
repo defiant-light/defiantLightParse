@@ -1,6 +1,4 @@
-var cburl = require('callback.js');
-var mailboy = require('cloud/mailboy.js');
 
-Parse.job("cburl",cburl);
+var mailboy = require('cloud/mailboy.js');
 
 Parse.job("sendEmail",mailboy.send);
