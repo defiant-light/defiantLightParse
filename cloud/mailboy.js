@@ -1,14 +1,10 @@
-
-// Use Parse.Cloud.define to define as many cloud functions as you want.
-// For example:
-Parse.Cloud.define("hello", function(request, response) {
-  response.success("Hello world!");
-});
-
+var creds = require('cloud/creds.js');
 var Mandrill = require('mandrill');
-Mandrill.initialize('myAPIKey');
+Mandrill.initialize(creds.mandrill() );
 
-Parse.Cloud.job("sendEmail",function(a,b){
+
+var mailboy={};
+mailboy.send=function(a,b){
     console.log(Json.stringify(a));
     console.log(Json.stringify(b));
     Mandrill.sendEmail({
@@ -19,7 +15,7 @@ Parse.Cloud.job("sendEmail",function(a,b){
       from_name: "Cloud Code",
       to: [
         {
-          email: "lucaswadedavis@gmail.com.com",
+          email: "lucaswadedavis@gmail.com",
           name: "Your Name"
         }
       ]
@@ -36,12 +32,6 @@ Parse.Cloud.job("sendEmail",function(a,b){
     }
   });
   
-});
+};
 
-
-var cburl = require('callback.js');
-var mailboy = require('cloud/mailboy.js');
-
-Parse.job("cburl",cburl);
-
-Parse.job("sendEmail",mailboy.send);
+module.exports=mailboy;
