@@ -2,11 +2,10 @@ var creds = require('cloud/creds.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill() );
 
-
 var mailboy={};
 mailboy.send=function(a,b){
-    console.log(Json.stringify(a));
-    console.log(Json.stringify(b));
+    console.log(JSON.stringify(a));
+    console.log(JSON.stringify(b));
     Mandrill.sendEmail({
     message: {
       text: "Hello World!",
