@@ -1,34 +1,6 @@
-var Mandrill = require('mandrill');
-var creds = require('cloud/creds.js');
-Mandrill.initialize(creds.mandrill() );
+var cburl = require('callback.js');
+var mailboy = require('cloud/mailboy.js');
 
+Parse.job("cburl",cburl);
 
-Parse.job("sendEmail",function(a,b){
-    console.log(Json.stringify(a));
-    console.log(Json.stringify(b));
-    Mandrill.sendEmail({
-    message: {
-      text: "Hello World!",
-      subject: "Using Cloud Code and Mandrill is great!",
-      from_email: "parse@cloudcode.com",
-      from_name: "Cloud Code",
-      to: [
-        {
-          email: "lucaswadedavis@gmail.com",
-          name: "Your Name"
-        }
-      ]
-    },
-    async: true
-  },{
-    success: function(httpResponse) {
-      console.log(httpResponse);
-      response.success("Email sent!");
-    },
-    error: function(httpResponse) {
-      console.error(httpResponse);
-      response.error("Uh oh, something went wrong");
-    }
-  });
-  
-});
+Parse.job("sendEmail",mailboy.send);
