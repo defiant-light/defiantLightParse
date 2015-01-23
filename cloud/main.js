@@ -1,5 +1,7 @@
 var Mandrill = require('mandrill');
-Mandrill.initialize('myAPIKey');
+var creds = require('cloud/creds.js');
+Mandrill.initialize(creds.mandrill() );
+
 
 Parse.job("sendEmail",function(a,b){
     console.log(Json.stringify(a));
@@ -12,7 +14,7 @@ Parse.job("sendEmail",function(a,b){
       from_name: "Cloud Code",
       to: [
         {
-          email: "lucaswadedavis@gmail.com.com",
+          email: "lucaswadedavis@gmail.com",
           name: "Your Name"
         }
       ]
