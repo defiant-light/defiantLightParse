@@ -1,11 +1,11 @@
-<<<<<<< HEAD
+
 
 // Use Parse.Cloud.define to define as many cloud functions as you want.
 // For example:
 Parse.Cloud.define("hello", function(request, response) {
   response.success("Hello world!");
 });
-=======
+
 var Mandrill = require('mandrill');
 Mandrill.initialize('myAPIKey');
 
@@ -38,4 +38,4 @@ Parse.job("sendEmail",function(a,b){
   });
   
 });
->>>>>>> daa5ee97208465610ac2c68bca9baba4370472e9
+
