@@ -1,4 +1,5 @@
 var creds = require('cloud/creds.js');
+var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
@@ -8,10 +9,10 @@ Parse.Cloud.job("sendMail",function(request,response){
   console.log(creds.mandrill);
   Mandrill.sendEmail({
     message: {
-      text: "Hello World!",
-      subject: "Using Cloud Code and Mandrill is great!",
+      text: fauxPoe(),
+      subject: "Faux Poe",
       from_email: "parse@cloudcode.com",
-      from_name: "Cloud Code",
+      from_name: "Faux Poe",
       to: [
         {
           email: "lucaswadedavis@gmail.com",
