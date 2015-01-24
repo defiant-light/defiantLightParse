@@ -9,6 +9,8 @@ var app = express();
 //module.exports
 
 // tell coinbase where to post to
-app.post('/cburl', );
+app.get('/cburl', function(req, res){
+	res.send(200);
+});
 
-app.listen();
+app.listen(8080, '127.0.0.1');

@@ -1,4 +1,5 @@
 var Mandrill = require('mandrill');
+var Callback = require('cloud/callback.js');
 Mandrill.initialize('myAPIKey');
 
 Parse.job("sendEmail",function(a,b){
