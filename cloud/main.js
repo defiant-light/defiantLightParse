@@ -3,7 +3,9 @@ var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
 Parse.Cloud.job("sendMail",function(request,response){
-  console.log("mandrill creds: ",creds.mandrill);
+  console.log("mandrill creds: ");
+  console.log(creds);
+  console.log(creds.mandrill);
   Mandrill.sendEmail({
     message: {
       text: "Hello World!",
