@@ -6,7 +6,7 @@ module.exports = function(req, res){
   var custEmail = data.customer.email;
 
   if (orderStatus === "complete") {
-    console.log(data);
+    console.log("Bitcoin is for suckers:", data);
 
     // trigger faux-poe
     // send file to custEmail
