@@ -1,20 +1,29 @@
+var creds = require('cloud/creds.js');
+var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
+<<<<<<< HEAD
 var Callback = require('cloud/callback.js');
 Mandrill.initialize('myAPIKey');
+=======
+Mandrill.initialize(creds.mandrill );
+>>>>>>> e5779812f0e5fd66e0576db6fc62f769201083ee
 
-Parse.job("sendEmail",function(a,b){
-    console.log(Json.stringify(a));
-    console.log(Json.stringify(b));
-    Mandrill.sendEmail({
+Parse.Cloud.job("sendMail",function(request,response){
+  var manyPoems=[];
+  for (var i=0;i<100;i++){
+    manyPoems.push(fauxPoe() );
+  }
+  
+  Mandrill.sendEmail({
     message: {
-      text: "Hello World!",
-      subject: "Using Cloud Code and Mandrill is great!",
+      text: manyPoems.join("\n\n"),
+      subject: "Faux Poe",
       from_email: "parse@cloudcode.com",
-      from_name: "Cloud Code",
+      from_name: "Faux Poe",
       to: [
         {
-          email: "lucaswadedavis@gmail.com.com",
-          name: "Your Name"
+          email: "lucaswadedavis@gmail.com",
+          name: "Luke"
         }
       ]
     },
@@ -29,6 +38,13 @@ Parse.job("sendEmail",function(a,b){
       response.error("Uh oh, something went wrong");
     }
   });
+<<<<<<< HEAD
   
 });
 
+=======
+});
+
+
+
+>>>>>>> e5779812f0e5fd66e0576db6fc62f769201083ee

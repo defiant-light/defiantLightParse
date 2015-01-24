@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "defiantlight"
+        }, 
+        "defiantlight": {
+            "applicationId": "i9OEm7cwH3JJje57K50aaPYedZ9P97B0pBGF4o67", 
+            "masterKey": "LVIRNY3TKJ9I1auVqAKtzMdSR4mNkPqopDXaHozM"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.3.3"
+    }
+}
