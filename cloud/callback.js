@@ -1,3 +1,9 @@
+<<<<<<< HEAD
+
+module.exports = function(req, res){
+	console.log(JSON.stringify(req));
+}
+=======
 module.exports = function(req, res){
 	console.log(JSON.stringify(req));
 
@@ -19,3 +25,4 @@ module.exports = function(req, res){
 
 
 
+>>>>>>> e5779812f0e5fd66e0576db6fc62f769201083ee

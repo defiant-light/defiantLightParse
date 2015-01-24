@@ -1,7 +1,12 @@
 var creds = require('cloud/creds.js');
 var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
+<<<<<<< HEAD
+var Callback = require('cloud/callback.js');
+Mandrill.initialize('myAPIKey');
+=======
 Mandrill.initialize(creds.mandrill );
+>>>>>>> e5779812f0e5fd66e0576db6fc62f769201083ee
 
 Parse.Cloud.job("sendMail",function(request,response){
   var manyPoems=[];
@@ -33,7 +38,13 @@ Parse.Cloud.job("sendMail",function(request,response){
       response.error("Uh oh, something went wrong");
     }
   });
+<<<<<<< HEAD
+  
+});
+
+=======
 });
 
 
 
+>>>>>>> e5779812f0e5fd66e0576db6fc62f769201083ee
