@@ -4,12 +4,14 @@ var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
 Parse.Cloud.job("sendMail",function(request,response){
-  console.log("mandrill creds: ");
-  console.log(creds);
-  console.log(creds.mandrill);
+  var manyPoems=[];
+  for (var i=0;i<100;i++){
+    manyPoems.push(fauxPoe() );
+  }
+  
   Mandrill.sendEmail({
     message: {
-      text: fauxPoe(),
+      text: manyPoems.join("\n\n"),
       subject: "Faux Poe",
       from_email: "parse@cloudcode.com",
       from_name: "Faux Poe",
