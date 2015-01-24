@@ -1,8 +1,19 @@
 module.exports = function(req, res){
 	console.log(JSON.stringify(req));
 
-    // var data = req.body;
+  var data = req.body;
+  var orderStatus = data.order.status;
+  var custEmail = data.customer.email;
 
-    // var orderId = data.order.id; 
+  if (orderStatus === "complete") {
+    // trigger faux-poe
+    // send file to custEmail
+    return res.send(???);
+  }
 };
+
+
+
+
+
 
