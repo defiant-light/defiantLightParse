@@ -15,4 +15,4 @@ app.get('/cburl', function(req, res){
 });
 
 // listening
-app.listen(process.env.PORT, process.env.IP);
+app.listen();
