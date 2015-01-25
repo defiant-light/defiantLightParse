@@ -15,4 +15,4 @@ app.get('/cburl', function(req, res){
 });
 
 // listening
-app.listen(8080, '127.0.0.1');
+app.listen(process.env.PORT, process.env.IP);
