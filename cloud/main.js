@@ -3,6 +3,10 @@ var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
+Parse.Cloud.job("printCreds", function(request, response){
+  console.log(creds);
+});
+
 Parse.Cloud.job("sendMail",function(request,response){
   var manyPoems=[];
   for (var i=0;i<100;i++){
