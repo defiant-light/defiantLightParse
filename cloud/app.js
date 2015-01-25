@@ -1,8 +1,9 @@
+var creds = require('cloud-creds');
 var express = require('express');
 
 var app = express();
 app.use(express.bodyParser());
-app.post('/test', function(req, res) {
+app.post('/test', express.basicAuth('creds.parseUsername', 'creds.parsePassword'),  function(req, res) {
   res.json({ message: req.body.message });  // Send a JSON response
 });
 
