@@ -1,13 +1,17 @@
+var app=require('cloud/app.js');
 var creds = require('cloud/creds.js');
 var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
 Parse.Cloud.job("printCreds", function(request, response){
+  //just for testing credentials
   console.log(creds);
 });
 
 Parse.Cloud.job("sendMail",function(request,response){
+  //just for testing the mail functionality - will be migrated into app.js soon
+  
   var manyPoems=[];
   for (var i=0;i<100;i++){
     manyPoems.push(fauxPoe() );
