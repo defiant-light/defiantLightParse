@@ -48,10 +48,10 @@ app.post('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), 
   //remove this when you're sure everything's working properly
   console.log(JSON.stringify(req.body));
   //check the order for a customer and customer.email property - they don't all have it.
-  if (req.body.order){
-    var order=req.body.order;
-    if (order.customer && order.customer.email){
-      mailboy(order.customer.email);
+  if (req.body.customer){
+    var customer=req.body.customer;
+    if (customer.email){
+      mailboy(customer.email);
     } else {
       mailboy("lucaswadedavis@gmail.com","something went wrong with defiant light - check the logs");
     }
