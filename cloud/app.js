@@ -9,9 +9,9 @@ app.use(express.bodyParser());
 
 app.post('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), function(req, res) {
   //in order to inspect the structure of the JSON returned by Coinbase, we'll log it here
-  console.log(JSON.stringify(req.body.message));
+  console.log(JSON.stringify(req.body));
   //responds with JSON, I think this may eventually need to change to a status 200
-  res.json({ message: req.body.message });
+  res.json({ message: "success!" });
   //here in the near future - once we're sure this is working - we'll pull in
   //the mandrill functionality that's currently in main.js
   
