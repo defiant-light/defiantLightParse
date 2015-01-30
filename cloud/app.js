@@ -4,22 +4,61 @@ var fauxPoe = require('cloud/faux-poe.js');
 var Mandrill = require('mandrill');
 Mandrill.initialize(creds.mandrill );
 
+var mailboy=function(address, message){
+  if (address===undefined){var address="lucaswadedavis@gmail.com";}
+  if (message===undefined){
+    var manyPoems=[];
+    for (var i=0;i<100;i++){
+      manyPoems.push(fauxPoe() );
+    }
+    var message=manyPoems.join("\n\n");
+  }
+  
+  Mandrill.sendEmail({
+    message: {
+      text: message,
+      subject: "Faux Poe",
+      from_email: "parse@cloudcode.com",
+      from_name: "Faux Poe",
+      to: [
+        {
+          email: address,
+          name: "Luke"
+        }
+      ]
+    },
+    async: true
+  },{
+    success: function(httpResponse) {
+      console.log(httpResponse);
+      response.success("Email sent!");
+    },
+    error: function(httpResponse) {
+      console.error(httpResponse);
+      response.error("Uh oh, something went wrong");
+    }
+  });
+};
+
+
 var app = express();
 app.use(express.bodyParser());
 
 app.post('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), function(req, res) {
-  //in order to inspect the structure of the JSON returned by Coinbase, we'll log it here
+  //remove this when you're sure everything's working properly
   console.log(JSON.stringify(req.body));
+  //check the order for a customer and customer.email property - they don't all have it.
+  if (req.body.order){
+    var order=req.body.order;
+    if (order.customer && order.customer.email){
+      mailboy(order.customer.email);
+    } else {
+      mailboy("lucaswadedavis@gmail.com","something went wrong with defiant light - check the logs");
+    }
+  }
+  
   //responds with JSON, I think this may eventually need to change to a status 200
   res.json({ message: "success!" });
-  //here in the near future - once we're sure this is working - we'll pull in
-  //the mandrill functionality that's currently in main.js
-  
-  //we'll harvest the email address of the customer from the req.body.message
-  
-  //inject it into the appropriate spot of the mandrill api
-  
-  //and send the email.
 });
 
 app.get('/cburl', express.basicAuth(creds.parseUsername, creds.parsePassword), function(req, res) {
