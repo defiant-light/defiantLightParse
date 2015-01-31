@@ -1,0 +1,145 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', '-g', 'generator-test' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.35
+4 verbose cache add [ 'generator-test', null ]
+5 verbose cache add name=undefined spec="generator-test" args=["generator-test",null]
+6 verbose parsed url { protocol: null,
+6 verbose parsed url   slashes: null,
+6 verbose parsed url   auth: null,
+6 verbose parsed url   host: null,
+6 verbose parsed url   port: null,
+6 verbose parsed url   hostname: null,
+6 verbose parsed url   hash: null,
+6 verbose parsed url   search: null,
+6 verbose parsed url   query: null,
+6 verbose parsed url   pathname: 'generator-test',
+6 verbose parsed url   path: 'generator-test',
+6 verbose parsed url   href: 'generator-test' }
+7 silly lockFile 068ce044-generator-test generator-test
+8 verbose lock generator-test /Users/toddskinner/.npm/068ce044-generator-test.lock
+9 silly lockFile 068ce044-generator-test generator-test
+10 silly lockFile 068ce044-generator-test generator-test
+11 verbose addNamed [ 'generator-test', '' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile a19cfbe8-generator-test generator-test@
+14 verbose lock generator-test@ /Users/toddskinner/.npm/a19cfbe8-generator-test.lock
+15 silly addNameRange { name: 'generator-test', range: '*', hasData: false }
+16 verbose request where is /generator-test
+17 verbose request registry https://registry.npmjs.org/
+18 verbose request id 4c5300afdf5c8f0a
+19 verbose url raw /generator-test
+20 verbose url resolving [ 'https://registry.npmjs.org/', './generator-test' ]
+21 verbose url resolved https://registry.npmjs.org/generator-test
+22 verbose request where is https://registry.npmjs.org/generator-test
+23 info trying registry request attempt 1 at 18:53:05
+24 http GET https://registry.npmjs.org/generator-test
+25 http 200 https://registry.npmjs.org/generator-test
+26 silly registry.get cb [ 200,
+26 silly registry.get   { date: 'Sat, 31 Jan 2015 02:53:05 GMT',
+26 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+26 silly registry.get     etag: '"674TK5IQGF3CLQRT8H6KH1IGJ"',
+26 silly registry.get     'content-type': 'application/json',
+26 silly registry.get     'cache-control': 'max-age=60',
+26 silly registry.get     'content-length': '12143',
+26 silly registry.get     'accept-ranges': 'bytes',
+26 silly registry.get     via: '1.1 varnish',
+26 silly registry.get     age: '0',
+26 silly registry.get     'x-served-by': 'cache-sjc3131-SJC',
+26 silly registry.get     'x-cache': 'MISS',
+26 silly registry.get     'x-cache-hits': '0',
+26 silly registry.get     'x-timer': 'S1422672785.758979,VS0,VE163',
+26 silly registry.get     vary: 'Accept',
+26 silly registry.get     'keep-alive': 'timeout=10, max=50',
+26 silly registry.get     connection: 'Keep-Alive' } ]
+27 silly addNameRange number 2 { name: 'generator-test', range: '*', hasData: true }
+28 silly addNameRange versions [ 'generator-test',
+28 silly addNameRange   [ '0.1.3', '1.0.0', '1.0.2', '1.0.4', '1.0.5', '2.0.1' ] ]
+29 verbose addNamed [ 'generator-test', '2.0.1' ]
+30 verbose addNamed [ '2.0.1', '2.0.1' ]
+31 silly lockFile 45598a5c-generator-test-2-0-1 generator-test@2.0.1
+32 verbose lock generator-test@2.0.1 /Users/toddskinner/.npm/45598a5c-generator-test-2-0-1.lock
+33 silly lockFile d5f90bea-or-test-generator-test-2-0-1-tgz https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+34 verbose lock https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz /Users/toddskinner/.npm/d5f90bea-or-test-generator-test-2-0-1-tgz.lock
+35 verbose addRemoteTarball [ 'https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz',
+35 verbose addRemoteTarball   'c0299c3a632a98c8dc95d0ed70554938ba616189' ]
+36 info retry fetch attempt 1 at 18:53:05
+37 verbose fetch to= /var/folders/d2/w5b91yt94j7d9_nw3hxgpy2m0000gn/T/npm-23541-mwcnko_i/registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+38 http GET https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+39 http 200 https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+40 silly lockFile d5f90bea-or-test-generator-test-2-0-1-tgz https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+41 silly lockFile d5f90bea-or-test-generator-test-2-0-1-tgz https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz
+42 silly lockFile 45598a5c-generator-test-2-0-1 generator-test@2.0.1
+43 silly lockFile 45598a5c-generator-test-2-0-1 generator-test@2.0.1
+44 silly lockFile a19cfbe8-generator-test generator-test@
+45 silly lockFile a19cfbe8-generator-test generator-test@
+46 silly resolved [ { name: 'generator-test',
+46 silly resolved     version: '2.0.1',
+46 silly resolved     description: 'Yeoman based generator that creates a simple mocha/chai TDD scaffold for solving algorithms',
+46 silly resolved     keywords: [ 'yeoman-generator', 'algorithms', 'mocha', 'TDD', 'chai' ],
+46 silly resolved     homepage: 'https://github.com/phillipalexander/generator-test',
+46 silly resolved     bugs: { url: 'https://github.com/phillipalexander/generator-test/issues' },
+46 silly resolved     author:
+46 silly resolved      { name: 'Phillip Alexander',
+46 silly resolved        email: 'git@phillipalexander.io',
+46 silly resolved        url: 'https://github.com/phillipalexander' },
+46 silly resolved     main: 'app/index.js',
+46 silly resolved     repository:
+46 silly resolved      { type: 'git',
+46 silly resolved        url: 'git://github.com/phillipalexander/generator-test.git' },
+46 silly resolved     scripts: { test: 'mocha' },
+46 silly resolved     dependencies: { 'yeoman-generator': '^0.17', chai: '^1.8.1', mocha: '^1.14.0' },
+46 silly resolved     devDependencies: { mocha: '~1.14.0', chai: '~1.8.0' },
+46 silly resolved     peerDependencies: { yo: '>=1.0.0' },
+46 silly resolved     engines: { node: '>=0.8.0', npm: '>=1.2.10' },
+46 silly resolved     licenses: [ [Object] ],
+46 silly resolved     gitHead: '528d28a9b99707a496309e3f17b189dc08a395c5',
+46 silly resolved     _id: 'generator-test@2.0.1',
+46 silly resolved     _shasum: 'c0299c3a632a98c8dc95d0ed70554938ba616189',
+46 silly resolved     _from: 'generator-test@',
+46 silly resolved     _npmVersion: '2.0.0-alpha-5',
+46 silly resolved     _npmUser: { name: 'phillipalexander', email: 'npm@phillipalexander.io' },
+46 silly resolved     maintainers: [ [Object] ],
+46 silly resolved     dist:
+46 silly resolved      { shasum: 'c0299c3a632a98c8dc95d0ed70554938ba616189',
+46 silly resolved        tarball: 'http://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz' },
+46 silly resolved     directories: {},
+46 silly resolved     _resolved: 'https://registry.npmjs.org/generator-test/-/generator-test-2.0.1.tgz' } ]
+47 info install generator-test@2.0.1 into /usr/local/lib
+48 info installOne generator-test@2.0.1
+49 verbose lib/node_modules/generator-test unbuild
+50 verbose tar unpack /Users/toddskinner/.npm/generator-test/2.0.1/package.tgz
+51 silly lockFile c4fbb3f4--lib-node-modules-generator-test tar:///usr/local/lib/node_modules/generator-test
+52 verbose lock tar:///usr/local/lib/node_modules/generator-test /Users/toddskinner/.npm/c4fbb3f4--lib-node-modules-generator-test.lock
+53 silly lockFile 40287a2a-generator-test-2-0-1-package-tgz tar:///Users/toddskinner/.npm/generator-test/2.0.1/package.tgz
+54 verbose lock tar:///Users/toddskinner/.npm/generator-test/2.0.1/package.tgz /Users/toddskinner/.npm/40287a2a-generator-test-2-0-1-package-tgz.lock
+55 silly gunzTarPerm modes [ '755', '644' ]
+56 error Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-test'
+56 error  { [Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-test']
+56 error   errno: 3,
+56 error   code: 'EACCES',
+56 error   path: '/usr/local/lib/node_modules/generator-test',
+56 error   fstream_type: 'Directory',
+56 error   fstream_path: '/usr/local/lib/node_modules/generator-test',
+56 error   fstream_class: 'DirWriter',
+56 error   fstream_stack:
+56 error    [ '/usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23',
+56 error      '/usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53',
+56 error      'Object.oncomplete (fs.js:108:15)' ] }
+57 error Please try running this command again as root/Administrator.
+58 error System Darwin 14.0.0
+59 error command "node" "/usr/local/bin/npm" "install" "-g" "generator-test"
+60 error cwd /Users/toddskinner/workspace/defiantLightParse
+61 error node -v v0.10.35
+62 error npm -v 1.4.28
+63 error path /usr/local/lib/node_modules/generator-test
+64 error fstream_path /usr/local/lib/node_modules/generator-test
+65 error fstream_type Directory
+66 error fstream_class DirWriter
+67 error code EACCES
+68 error errno 3
+69 error stack Error: EACCES, mkdir '/usr/local/lib/node_modules/generator-test'
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/fstream/lib/dir-writer.js:36:23
+70 error fstream_stack /usr/local/lib/node_modules/npm/node_modules/mkdirp/index.js:46:53
+70 error fstream_stack Object.oncomplete (fs.js:108:15)
+71 verbose exit [ 3, true ]
