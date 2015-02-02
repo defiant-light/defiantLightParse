@@ -1,7 +1,4 @@
-var path = require('path');
-var expect = require('chai').expect;
-
-var defiantLightParse = require(path.join(__dirname, '..', '.cloud/app.js'));
+/* global defiantLightParse, describe, it, expect, should */
 
 describe('defiantLightParse()', function () {
   'use strict';
