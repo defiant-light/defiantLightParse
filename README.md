@@ -1,8 +1,4 @@
-
-# Defiant-Light
-
-> README
-
+#Defiant-Light: Faux Poe
 ## Team
 
   - __Product Owner__: Luke Davis
@@ -11,6 +7,7 @@
 
 ## Table of Contents
 
+1. [The Big Idea](#the-big-idea)
 1. [Usage](#Usage)
 1. [Requirements](#requirements)
 1. [Development](#development)
@@ -18,6 +15,9 @@
     1. [Tasks](#tasks)
 1. [Team](#team)
 1. [Contributing](#contributing)
+
+##The Big Idea
+There's currently no platform to monetize machine-generated content in a way that capitalizes on the increadible volume possible using generative processes, and the near-zero marginal cost of creating an additional units of content. We've addressed this by using coinbase as a means of paying for the algorithmically-generated content (in this case poor imitations of Edgar Allan Poe poetry) and Mandrill to deliver that content to the customer.
 
 ## Usage
 
