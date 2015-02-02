@@ -1,7 +1,7 @@
 var path = require('path');
 var expect = require('chai').expect;
 
-var defiantLightParse = require(path.join(__dirname, '..', './defiantLightParse.js'));
+var defiantLightParse = require(path.join(__dirname, '..', '.cloud/app.js'));
 
 describe('defiantLightParse()', function () {
   'use strict';
