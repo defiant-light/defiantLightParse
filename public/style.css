@@ -1,7 +1,7 @@
 body { 
     font-family: Helvetica, Arial, sans-serif; 
     text-align: center;
-    background:#777;
+    background:#ddd;
     padding:0;
     margin:0;
 }
@@ -19,7 +19,7 @@ h1 {
 }
 
 h2{
-    background:#333;
+    background:#111;
     color:#fff;
     padding:80px 0 80px 0;
     margin:0;
