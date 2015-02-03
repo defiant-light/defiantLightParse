@@ -7,7 +7,7 @@ body {
 }
 
 div {
-    padding: 80px 0 80px 0; 
+    padding: 20px 0 20px 0; 
 }
 
 h1 { 
@@ -15,18 +15,18 @@ h1 {
     margin: 0;
     color:#333;
     background:#fff;
-    padding:80px 0 40px 0;
+    padding:10px 0 10px 0;
 }
 
 h2{
     background:#111;
     color:#fff;
-    padding:80px 0 80px 0;
+    padding:20px 0 20px 0;
     margin:0;
 }
 
 p { 
-    margin: 40px 0; 
+    margin: 20px 0; 
 }
 
 em { 
@@ -36,4 +36,8 @@ em {
 a { 
     color: #5298fc; 
     text-decoration: none; 
+}
+
+button{
+    cursor:pointer;
 }
