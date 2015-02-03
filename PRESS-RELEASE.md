@@ -54,7 +54,7 @@ Once the project moves into development, the press release can be used as a touc
 ## Customer Quote ##
  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
 
- "It was so easy to get my stock image business booming using fauxpoe.com!"
+ "It was so easy to get my poem business booming using fauxpoe.com!"
 
  "I didn't know how much I loved Edgar Allen Poe until today."
 
