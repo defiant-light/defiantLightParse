@@ -17,28 +17,48 @@ Once the project moves into development, the press release can be used as a touc
  -->
  
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
+ > Name the product in a way the reader (i.e. your target customers) will understand.
+
+ Faux Poe
 
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+ > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
+
+ This product is for anyone who wants to purchase or sell digitally-created content via Bitcoin.
 
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+ > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
+
+ We have created a platform where individuals can buy and sell digital content through Bitcoin. Once the user has purchased the digital good, he or she will receive an email with the product. The benefit of using our product is that the seller avoids minimum credit card fees which enables him or her to lower the price of the product to stay competitive.
 
 ## Problem ##
-  > Describe the problem your product solves.
+ > Describe the problem your product solves.
+
+ There's currently no platform to monetize machine-generated content in a way that capitalizes on the incredible volume possible using generative processes, and the near-zero marginal cost of creating an additional units of content.
 
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
+ > Describe how your product elegantly solves the problem.
+
+ We've addressed the problem by using bitcoin as a means of paying for the algorithmically-generated content (in this case poor imitations of Edgar Allan Poe poetry) and Mandrill to deliver that content to the customer.
 
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
+ > A quote from a spokesperson in your company.
+ 
+ "Algorithmically generated content! Need I say more!?!?!"
 
 ## How to Get Started ##
-  > Describe how easy it is to get started.
+ > Describe how easy it is to get started.
+ 
+ Please visit fauxpoe.com to get started.
 
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+ > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
+
+ "It was so easy to get my stock image business booming using fauxpoe.com!"
+
+ "I didn't know how much I loved Edgar Allen Poe until today."
 
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
+ > Wrap it up and give pointers where the reader should go next.
+
+ We've made it incredibly easy to buy and sell digital content via Bitcoin. Visit fauxpoe.com to see what all the fuss is about!
