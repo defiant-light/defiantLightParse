@@ -1,13 +1,13 @@
 body { 
     font-family: Helvetica, Arial, sans-serif; 
     text-align: center;
-    background:#ddd;
+    background:#bbb;
     padding:0;
     margin:0;
 }
 
 div {
-    padding: 20px 0 20px 0; 
+    padding: 30px 0 0px 0; 
 }
 
 h1 { 
@@ -15,10 +15,11 @@ h1 {
     margin: 0;
     color:#333;
     background:#fff;
-    padding:10px 0 10px 0;
+    padding:30px 0 30px 0;
 }
 
 h2{
+    font-size:4em;
     background:#111;
     color:#fff;
     padding:20px 0 20px 0;
@@ -40,4 +41,7 @@ a {
 
 button{
     cursor:pointer;
+    border:2px solid #111;
+    border-radius:30px;
+    padding:20px;
 }
