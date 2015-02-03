@@ -1,3 +1,5 @@
+/* Had issues implementing our tests */
+
 /* global defiantLightParse, describe, it, expect, should */
 
 describe('chance()', function () {
