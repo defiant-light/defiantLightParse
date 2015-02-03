@@ -1,10 +1,10 @@
-/*! defiantLightParse v0.0.0 - MIT license */
-'use strict';
+// /*! defiantLightParse v0.0.0 - MIT license */
+// 'use strict';
 
-var defiantLightParse = function () {
-  // your code goes here
-}
+// var defiantLightParse = function () {
+//   // your code goes here
+// }
 
-if ( typeof module !== "undefined" ) {
-  module.exports = defiantLightParse;
-}
+// if ( typeof module !== "undefined" ) {
+//   module.exports = defiantLightParse;
+// }
